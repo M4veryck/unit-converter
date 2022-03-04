@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #1f2937;
+  text-align: center;
+}
+
+/*========== hero ===========*/
+
+.hero {
+  background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+  padding: 53px 51px;
+}
+
+.hero--title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-weight: 800;
+  font-size: 32x;
+  line-height: 38px;
+  /* identical to box height, or 173% */
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.hero--input {
+  max-width: 80%;
+
+  font-weight: 800;
+  font-size: 7vw;
+  line-height: 24px;
+  /* or 25% */
+  color: #ffffff;
+  text-align: center;
+
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.hero--input:focus {
+  outline: none;
+}
+
+.hero--input::placeholder {
+  font-weight: 300;
+  color: lightgray;
+}
+
+#error-msg {
+  color: yellow;
+  visibility: hidden;
+  font-size: 18px;
+}
+
+/*========== main ===========*/
+
+main {
+  padding: 38px 102px 11px;
+}
+
+section {
+  margin-bottom: 27px;
+}
+
+.conversion--headings {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  color: #ffffff;
+  margin-top: 0;
+}
+
+p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  color: #d2d2d2;
+  margin: 0;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Unit converter by Maveryck</title>
+    </head>
+    <body>
+        <div class="hero">
+            <h1 class="hero--title">Metric/Imperial unit conversion</h1>
+            <input type="text" class="hero--input" id="user-input" oninput="convert()" placeholder=" Type a number" autocomplete="off"/>
+            <p id="error-msg" >Invalid input</br>Please type numbers and one dot ( . ) at most</p>
+        </div>
+        
+        <main>
+            <section>
+                <h2 class="conversion--headings">Length (Meter/Feet)</h2>
+                <p>
+                    <span class="preconversion-num">0</span> meters = 
+                    <span id="meters-to-feet">0.000</span> feet 
+                    | <!-- this is a visible separator, don't delete -->
+                    <span class="preconversion-num">0</span> feet = 
+                    <span id="feet-to-meters">0.000</span> meters
+                </p>
+            </section>
+            
+            <section>
+                <h2 class="conversion--headings">Volume (Liters/Gallons)</h2>     
+                <p>
+                    <span class="preconversion-num">0</span> liters = 
+                    <span id="liters-to-gallons">0.000</span> gallons 
+                    | <!-- this is a visible separator, don't delete -->
+                    <span class="preconversion-num">0</span> gallons = 
+                    <span id="gallons-to-liters">0.000</span> liters
+                </p>
+            </section>
+            
+            <section>
+                <h2 class="conversion--headings">Mass (Kilograms/Pounds)</h2>
+                <p>
+                    <span class="preconversion-num">0</span> kilos = 
+                    <span id="kilos-to-pounds">0.000</span> pounds 
+                    | <!-- this is a visible separator, don't delete -->
+                    <span class="preconversion-num">0</span> pounds = 
+                    <span id="pounds-to-kilos">0.000</span> kilos
+                </p>
+            </section>
+        </main>
+        <script src="convert.js" ></script>
+    </body>
+</html>
